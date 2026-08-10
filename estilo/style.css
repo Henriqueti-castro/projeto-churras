@@ -12,9 +12,10 @@
 :root{
     --cor1: #ffffff;
     --cor2: #3b0f0f;
-    --cor3: #000000;
+    --cor3: #000000e6;
     --cor4: #c43636;
     --cor5: #d3d3d3;
+    --cor6: #000000;
 
     --font-padrao: Arial, Helvetica, sans-serif;
     --font-oswaldo: 'Oswald';
@@ -109,7 +110,6 @@ header nav>a:hover{
 
 .title-chu{
     background-color: var(--cor3);
-    opacity: 80%;
     position: absolute;
     top: 20%;
     height: 60%;
@@ -138,82 +138,203 @@ header nav>a:hover{
     height: 30vh;
 }
 
+@media (max-width: 600px) {
+    .contain-exi {
+        display: none;
+    }
+
+    .contain-chu {
+        width: 100%;
+    }
+
+    .contain-chu img {
+        background-size: cover;
+    }
+
+    .title-chu h1 {
+        font-size: 25px;
+    }
+
+    .title-chu p {
+        font-size: 12px;
+    }
+}
+
 .img-exi img{
     width: 100%;
     height: 100%;
 }
 
 .contain-destaque{
-    width: 99vw;
+    width: 97vw;
     height: 100vh;
-    background-color: var(--cor5);
-    overflow: hidden;
-    position: relative;
+    padding-top: 5%;
+    background: var(--cor5) url('../imagens/img-destaque/destaque.jpg') center center no-repeat;
+    background-size: cover;
 }
 
-.contain-destaque img{
-    width: 100%;
-    height: 100%;
+@media (max-width: 600px) {
+    .contain h1 {
+        font-size: 25px;
+    }
 }
 
-.contain-cardapio{
-    position: absolute;
+.contain{
     background-color: var(--cor3);
-    opacity: 80%;
-    top: 5%;
     width: 100%;
-    height: 45%;
+    height: 90%;
 }
 
-.contain-cardapio h1{
+.contain h1{
     color: var(--cor1);
     font-family: var(--font-oswaldo);
     text-align: center;
 }
 
-.img-cardapio{
-    margin-top: 50px;
-    margin-left: 100px;
+.contain .img-cardapio{
+    margin-left: 50px;
+    padding-right: 50px;
     display: flex;
-    flex-wrap: nowrap;
-    gap: 60px;
+    gap: 30px;
     overflow-x: auto;
+    scrollbar-width: none;
+}
+
+@media (max-width: 600px) {
+    .contain .img-cardapio {
+        margin-left: 20px;
+    }
+
+    .cardapio {
+        display: block;
+        max-width: 200px;
+        max-height: 250px;
+    }
+
+    .cardapio img {
+        max-width: 100%;
+        max-height: 100%;
+    }
 }
 
 .img-cardapio .cardapio{
-    background-color: var(--cor5);
     width: 400px;
     height: 200px;
     padding: 20px;
-    
+    opacity: 100%;
+    flex-shrink: 0;
 }
 
-.contain-bebidas{
-    position: absolute;
-    background-color: var(--cor3);
-    opacity: 80%;
-    top: 50%;
+.cardapio img {
     width: 100%;
-    height: 45%;
+    height: 100%;
+    transition: transform 0.5s ease;
+    border: 1px solid var(--cor3);
+    border-radius: 5px;
 }
 
-.contain-bebidas h1{
-    color: var(--cor1);
-    font-family: var(--font-oswaldo);
-    text-align: center;
+.cardapio img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 30px var(--cor6);
 }
 
 .img-bebidas{
-    margin-top: 50px;
-    margin-left: 100px;
+    margin-left: 50px;
+    padding-right: 50px;
     display: flex;
     flex-wrap: nowrap;
-    gap: 60px;
+    gap: 30px;
+    overflow-x: auto;
+    scrollbar-width: none;
+} 
+
+@media (max-width: 600px) {
+
+    .img-bebidas {
+        margin-left: 20px;
+    }
+
+    .bebidas {
+        max-width: 200px;
+        max-height: 250px;
+    }
+
+    .bebidas img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .img-bebidas .bebidas{
-    background-color: var(--cor5);
     width: 400px;
     height: 200px;
     padding: 20px;
+    flex-shrink: 0;
+}
+
+.bebidas img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--cor6);
+    border-radius: 5px;
+    transition: transform 0.5s ease;
+}
+
+.bebidas img:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    aside h2{
+        font-size: 20px;
+    }
+
+    aside p{
+        font-size: 12px;
+        display: block;
+        max-width: 400px;
+    }
+}
+
+aside {
+    background-color: var(--cor2);
+}
+
+aside h2 {
+    color: var(--cor1);
+    font-family: var(--font-oswaldo);
+    padding-top: 20px;
+    margin-left: clamp(10px, 5vw, 100px);
+}
+
+aside h1{
+    color: var(--cor1);
+    margin-top: clamp(10px, 5vw, 50px);
+    margin-bottom: 20px;
+    margin-left: clamp(10px, 5vw, 100px);
+    font-family: var(--font-oswaldo);
+}
+
+aside p{
+    color: var(--cor1);
+    margin-left: clamp(10px, 5vw, 100px);
+    padding-bottom: 50px;
+    display: block;
+    width: 1000px;
+    text-align: justify;
+    line-height: 30px;
+    font-family: var(--font-padrao);
+}
+
+footer {
+    color: var(--cor1);
+    background-color: var(--cor6);
+    text-align: center;
+    font-family: var(--font-padrao);
+}
+
+footer p{
+    color: var(--cor1);
+    font-family: var(--font-padrao);
+    font-weight: bold;
 }
