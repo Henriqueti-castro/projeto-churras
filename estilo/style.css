@@ -210,6 +210,12 @@ header nav>a:hover{
     height: 90%;
 }
 
+@media (max-width: 600px) {
+    .contain {
+        max-height: 80%;
+    }
+}
+
 .contain h1{
     color: var(--cor1);
     font-family: var(--font-oswaldo);
