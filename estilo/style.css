@@ -97,10 +97,17 @@ header nav>a:hover{
 }
 
 .contain-chu{
-    background-color: var(--cor5);
+    background: var(--cor5) url('../imagens/img-chu/churras-contain.jpg') left center no-repeat;
+    background-size: cover;
     width: 50vw;
     height: 90vh;
-    position: relative;
+}
+
+@media (max-width: 600px) {
+    .contain-chu {
+        width: 100vw;
+        height: 89vh;
+    }
 }
 
 .contain-chu img{
@@ -109,17 +116,16 @@ header nav>a:hover{
 }
 
 .title-chu{
+    margin-top: 25%;
     background-color: var(--cor3);
-    position: absolute;
-    top: 20%;
-    height: 60%;
+    height: 50%;
+    padding-top: 70px;
 }
 
 .title-chu h1{
     color: var(--cor1);
     margin-left: 80px;
     margin-bottom: 20px;
-    margin-top: 15%;
     font-family: var(--font-oswaldo);
 }
 
@@ -307,7 +313,7 @@ header nav>a:hover{
     aside p{
         font-size: 12px;
         display: block;
-        max-width: 400px;
+        max-width: 300px;
     }
 }
 
