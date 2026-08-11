@@ -107,6 +107,7 @@ header nav>a:hover{
     .contain-chu {
         width: 100vw;
         height: 90vh;
+
     }
 }
 
@@ -116,7 +117,7 @@ header nav>a:hover{
 }
 
 .title-chu{
-    margin-top: 25%;
+    margin-top: 35%;
     background-color: var(--cor3);
     height: 40%;
     position: relative;
