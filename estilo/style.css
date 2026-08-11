@@ -196,7 +196,8 @@ header nav>a:hover{
 
 @media (max-width: 600px) {
     .contain-destaque {
-        max-width: 97vw;
+        max-width: 99vw;
+        padding-top: 15%;
     }
     .contain h1 {
         font-size: 25px;
