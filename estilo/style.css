@@ -117,7 +117,7 @@ header nav>a:hover{
 }
 
 .title-chu{
-    margin-top: 35%;
+    margin-top: 25%;
     background-color: var(--cor3);
     height: 40%;
     position: relative;
@@ -125,7 +125,7 @@ header nav>a:hover{
 
 @media (max-width: 600px) {
     .title-chu {
-        margin-top: 35%;
+        margin-top: 50%;
     }
 }
 
