@@ -187,9 +187,9 @@ header nav>a:hover{
 }
 
 .contain-destaque{
-    width: 100vw;
+    width: 99vw;
     height: 100vh;
-    padding-top: 15%;
+    padding-top: 5%;
     background: var(--cor5) url('../imagens/img-destaque/destaque.jpg') center center no-repeat;
     background-size: cover;
 }
@@ -197,7 +197,7 @@ header nav>a:hover{
 @media (max-width: 600px) {
     .contain-destaque {
         max-width: 99vw;
-        padding-top: 15%;
+        padding-top: 25%;
     }
     .contain h1 {
         font-size: 25px;
@@ -206,14 +206,15 @@ header nav>a:hover{
 
 .contain{
     background-color: var(--cor3);
-    padding-top: 20%;
     width: 100%;
     height: 90%;
+    padding-top: 50px;
 }
 
 @media (max-width: 600px) {
     .contain {
         max-height: 80%;
+        padding-top: 20px;
     }
 }
 
