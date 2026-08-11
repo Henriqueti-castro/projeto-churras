@@ -187,7 +187,7 @@ header nav>a:hover{
 }
 
 .contain-destaque{
-    width: 99vw;
+    width: 100vw;
     height: 100vh;
     padding-top: 5%;
     background: var(--cor5) url('../imagens/img-destaque/destaque.jpg') center center no-repeat;
