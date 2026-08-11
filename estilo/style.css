@@ -106,7 +106,7 @@ header nav>a:hover{
 @media (max-width: 600px) {
     .contain-chu {
         width: 100vw;
-        height: 89vh;
+        height: 90vh;
     }
 }
 
@@ -118,33 +118,38 @@ header nav>a:hover{
 .title-chu{
     margin-top: 25%;
     background-color: var(--cor3);
-    height: 50%;
+    height: 40%;
     position: relative;
 }
 
-.title-chu h1{
-    position: absolute;
-    top: 20%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-    color: var(--cor1);
-    
-    font-family: var(--font-oswaldo);
+@media (max-width: 600px) {
+    .title-chu {
+        margin-top: 35%;
+    }
 }
 
-.title-chu p{
-    color: var(--cor1);
-    font-family: var(--font-padrao);
-    font-weight: bold;
-    line-height: 30px;
+.title-chu .title-chu2 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+}
+
+.title-chu2 h1{
+    color: var(--cor1);
+    font-family: var(--font-oswaldo);
+}
+
+.title-chu2 p{
+    color: var(--cor1);
+    font-family: var(--font-padrao);
+    font-weight: bold;
+    line-height: 30px;
 }
 
 @media (max-width: 600px) {
-    
+
 }
 
 .contain-exi .img-exi{
